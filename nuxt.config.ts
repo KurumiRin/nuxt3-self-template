@@ -2,6 +2,9 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  runtimeConfig: {
+    baseUrl: process.env.NUXT_BASE_URL ?? '',
+  },
   modules: [
     '@vueuse/nuxt',
     '@pinia/nuxt',
